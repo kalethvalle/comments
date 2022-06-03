@@ -1,12 +1,5 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Container from '@mui/material/Container';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Avatar from '@mui/material/Avatar';
-import Tooltip from '@mui/material/Tooltip';
-import IconButton from '@mui/material/IconButton';
+import React from 'react';
+import { AppBar, Container, Toolbar, Typography, Box, Avatar, Tooltip, IconButton } from '@mui/material';
 
 export const Header = (props) => {
     return (
@@ -31,7 +24,7 @@ export const Header = (props) => {
                     </Typography>
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ flexGrow: 0 }}>
-                        <Tooltip title="Open settings">
+                        <Tooltip title="listado de comentarios">
                             <IconButton sx={{ p: 0 }}>
                                 <Avatar alt="Comments" src="/static/images/avatar/2.jpg" />
                             </IconButton>
@@ -39,7 +32,6 @@ export const Header = (props) => {
                     </Box>
                 </Toolbar>
             </Container>
-
         </AppBar>
     );
 };

@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
 const path = require('path');
 const { mongoose } = require('./config/database');
 
@@ -8,6 +9,7 @@ const app = express();
 // middlewares
 app.use(morgan('tiny'));
 app.use(express.json());
+app.use(cors());
 
 // routes
 const routesConfig = require('./config/routes-configurations')
